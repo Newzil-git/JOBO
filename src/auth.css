@@ -1,0 +1,283 @@
+/* 登录和注册页面的共享样式 */
+
+/* 页面容器 */
+.auth-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+/* 渐变背景头部 */
+.auth-header {
+  position: relative;
+  padding: 2rem 0;
+  text-align: center;
+  overflow: hidden;
+  border-radius: 0 0 30px 30px;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #4CAF50, #2196F3);
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.auth-logo {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+/* 注册页面特定样式 */
+.register-header {
+  height: 30vh;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 表单容器 */
+.auth-form-container {
+  flex: 1;
+  padding: 0 1.5rem;
+  margin-top: -1rem;
+}
+
+.auth-form-card {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* 登录/注册切换标签 */
+.auth-tabs {
+  display: flex;
+  margin-bottom: 1.5rem;
+  background: #f5f5f5;
+  border-radius: 2rem;
+  padding: 0.25rem;
+}
+
+.auth-tab {
+  flex: 1;
+  padding: 0.75rem 0;
+  text-align: center;
+  border: none;
+  background: none;
+  border-radius: 2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  position: relative;
+  color: #666;
+}
+
+.auth-tab.active {
+  background: #fff;
+  color: #333;
+  font-weight: 500;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 注册页面的绿色下划线指示器 */
+.register-tabs .auth-tab.active .tab-indicator {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 25%;
+  width: 50%;
+  height: 3px;
+  background-color: #4CAF50;
+}
+
+/* 输入框样式 */
+.input-container {
+  display: flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  height: 3rem;
+}
+
+.input-container:focus-within {
+  border-color: #4CAF50;
+}
+
+.input-icon {
+  color: #999;
+  margin-right: 0.5rem;
+  font-size: 1.25rem;
+}
+
+.auth-input {
+  border: none !important;
+  box-shadow: none !important;
+  height: 100%;
+  font-size: 1rem;
+}
+
+.auth-input:focus {
+  outline: none;
+}
+
+/* 验证码输入组 */
+.code-input-group {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.verification-container {
+  flex: 1;
+}
+
+.verification-icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.5rem;
+  background-color: #999;
+  mask-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-1-13h2v6h-2zm0 8h2v2h-2z"/></svg>');
+  mask-size: contain;
+  mask-repeat: no-repeat;
+  mask-position: center;
+}
+
+.code-btn {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  font-size: 0.875rem;
+  height: 3rem;
+  min-width: 7rem;
+  cursor: pointer;
+}
+
+.code-btn.disabled {
+  background-color: #e0e0e0;
+  color: #999;
+  cursor: not-allowed;
+}
+
+/* 记住密码和忘记密码 */
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.forgot-link {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.forgot-password {
+  text-align: right;
+  margin-top: 1rem;
+  font-size: 0.875rem;
+}
+
+/* 协议勾选 */
+.agreement-check {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.agreement-text {
+  margin-left: 0.5rem;
+  color: #666;
+}
+
+/* 提交按钮 */
+.submit-btn {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 2rem;
+  padding: 0.875rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-bottom: 1.5rem;
+}
+
+/* 分割线 */
+.divider {
+  display: flex;
+  align-items: center;
+  margin: 1.5rem 0;
+  color: #999;
+  font-size: 0.875rem;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.divider span {
+  padding: 0 1rem;
+}
+
+/* 社交登录 */
+.social-login {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.wechat-container {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wechat-icon {
+  font-size: 1.75rem;
+  color: #4CAF50;
+}
+
+/* 底部协议文本 */
+.agreement {
+  text-align: center;
+  font-size: 0.75rem;
+  color: #999;
+  margin-bottom: 1rem;
+}
+
+.agreement a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+/* 响应式调整 */
+@media (max-width: 480px) {
+  .auth-form-container {
+    padding: 0 1rem;
+  }
+  
+  .auth-form-card {
+    padding: 1.25rem;
+  }
+}

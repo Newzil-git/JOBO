@@ -1,0 +1,140 @@
+/* 移动端适配样式 - 9:16比例 */
+
+/* 基础移动端容器设置 */
+.mobile-container {
+  max-width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  min-height: 100vh;
+  aspect-ratio: 9/16;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* 媒体查询适配不同设备 */
+@media screen and (max-width: 767px) {
+  body {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+  
+  /* 登录/注册页面适配 */
+  .auth-header {
+    padding-top: 10vh;
+    padding-bottom: 8vh;
+    border-radius: 0 0 30px 30px;
+  }
+  
+  .auth-container {
+    padding: 0 20px;
+  }
+  
+  /* 表单元素适配 */
+  .ant-input, .ant-input-password {
+    height: 50px;
+    font-size: 16px;
+  }
+  
+  .ant-btn {
+    height: 50px;
+    font-size: 16px;
+  }
+  
+  /* 调整表单间距 */
+  .auth-form {
+    margin-top: 4vh;
+  }
+  
+  /* 调整按钮大小 */
+  .tab-btn {
+    padding: 10px 0;
+    font-size: 15px;
+  }
+  
+  /* 调整卡片内边距 */
+  .card, .bg-white.rounded-2xl {
+    padding: 16px;
+  }
+}
+
+/* 适配高度较短的设备 */
+@media screen and (max-height: 700px) {
+  .auth-header {
+    padding-top: 6vh;
+    padding-bottom: 5vh;
+  }
+  
+  .auth-logo {
+    font-size: 1.5rem;
+  }
+  
+  .auth-form {
+    margin-top: 2vh;
+  }
+  
+  .form-footer {
+    margin-top: 2vh;
+  }
+}
+
+/* 确保9:16比例的视觉效果 */
+@media screen and (min-aspect-ratio: 9/16) {
+  .mobile-container {
+    max-width: calc(100vh * 9/16);
+    height: 100vh;
+  }
+}
+
+@media screen and (max-aspect-ratio: 9/16) {
+  .mobile-container {
+    width: 100%;
+    height: auto;
+    min-height: 100vh;
+  }
+}
+
+/* 优化表单元素触摸区域 */
+input, button, .ant-btn, .tab-btn {
+  touch-action: manipulation;
+}
+
+/* 优化登录/注册页面布局 */
+.login-page, .register-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* 优化登录/注册切换标签 */
+.tab-btn {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* 调整头部Logo大小 */
+.auth-header img.w-20 {
+  width: 15vw;
+  height: 15vw;
+  max-width: 80px;
+  max-height: 80px;
+}
+
+/* 调整表单容器位置 */
+.container.mx-auto.px-4.-mt-8 {
+  margin-top: -5vh;
+}
+
+/* 优化按钮触摸区域 */
+.ant-btn, button {
+  min-height: 44px;
+}
+
+/* 优化输入框触摸区域 */
+.ant-input, input {
+  min-height: 44px;
+}

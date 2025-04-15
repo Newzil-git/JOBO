@@ -1,0 +1,53 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- 背景 -->
+  <rect width="800" height="600" fill="#e0f0f0" />
+  
+  <!-- 天花板 -->
+  <rect x="0" y="0" width="800" height="100" fill="#d0e0e0" />
+  <line x1="0" y1="100" x2="800" y2="100" stroke="#c0d0d0" stroke-width="2" />
+  
+  <!-- 墙壁 -->
+  <rect x="0" y="100" width="800" height="300" fill="#e8f4f4" />
+  
+  <!-- 显示屏 -->
+  <rect x="150" y="120" width="500" height="200" fill="#333" />
+  <rect x="170" y="140" width="460" height="160" fill="#4a7a9c" />
+  <ellipse cx="400" cy="220" rx="200" ry="70" fill="#5588aa" opacity="0.7" />
+  
+  <!-- 桌子 -->
+  <rect x="100" y="350" width="600" height="20" fill="#8b5a2b" />
+  <rect x="120" y="370" width="560" height="10" fill="#7b4a1b" />
+  
+  <!-- 人物轮廓 (简化) -->
+  <g fill="#456">
+    <ellipse cx="150" cy="320" rx="25" ry="30" />
+    <ellipse cx="250" cy="320" rx="25" ry="30" />
+    <ellipse cx="350" cy="320" rx="25" ry="30" />
+    <ellipse cx="450" cy="320" rx="25" ry="30" />
+    <ellipse cx="550" cy="320" rx="25" ry="30" />
+    <ellipse cx="650" cy="320" rx="25" ry="30" />
+  </g>
+  
+  <!-- 笔记本电脑 (简化) -->
+  <g>
+    <rect x="130" y="380" width="40" height="30" fill="#ddd" />
+    <rect x="130" y="410" width="40" height="5" fill="#bbb" />
+    <rect x="230" y="380" width="40" height="30" fill="#ddd" />
+    <rect x="230" y="410" width="40" height="5" fill="#bbb" />
+    <rect x="330" y="380" width="40" height="30" fill="#ddd" />
+    <rect x="330" y="410" width="40" height="5" fill="#bbb" />
+    <rect x="430" y="380" width="40" height="30" fill="#ddd" />
+    <rect x="430" y="410" width="40" height="5" fill="#bbb" />
+    <rect x="530" y="380" width="40" height="30" fill="#ddd" />
+    <rect x="530" y="410" width="40" height="5" fill="#bbb" />
+    <rect x="630" y="380" width="40" height="30" fill="#ddd" />
+    <rect x="630" y="410" width="40" height="5" fill="#bbb" />
+  </g>
+  
+  <!-- 地板 -->
+  <rect x="0" y="450" width="800" height="150" fill="#e0e0d0" />
+  
+  <!-- 添加一些细节使图像更丰富 -->
+  <line x1="0" y1="450" x2="800" y2="450" stroke="#d0d0c0" stroke-width="2" />
+  <rect x="300" y="150" width="200" height="100" fill="#6699bb" opacity="0.8" />
+</svg>
