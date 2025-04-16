@@ -6,7 +6,6 @@ import Register from './pages/Register';
 import ForgotPassword from './pages/ForgotPassword';
 import IdentitySelection from './pages/IdentitySelection';
 import Home from './pages/Home';
-import AIChat from './pages/AIChat';
 import AIConsultation from './pages/AIConsultation';
 import AbilityProfile from './pages/AbilityProfile';
 import ProfileAnalysis from './pages/ProfileAnalysis';
@@ -41,14 +40,13 @@ function App() {
           
           {/* 用户流程路由 */}
           <Route path="/identity-selection" element={<IdentitySelection />} />
-          <Route path="/login" element={<Navigate to="/ai-chat" replace />} /> {/* 登录后直接进入个人访谈页面 */}
+          <Route path="/login" element={<Login />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/ai-chat" element={<AIChat />} /> {/* 个人访谈页面 */}
           <Route path="/ai-consultation" element={<AIConsultation />} />
           <Route path="/home" element={<Home />} /> {/* 能力分析结果选择页面 */}
-          <Route path="/ability-profile" element={<AbilityProfile />} /> {/* 个人画像分析界面 */}
-          <Route path="/profile-analysis" element={<ProfileAnalysis />} /> {/* 我的分析页面 - 显示分期个人信息 */}
+          <Route path="/ability-profile" element={<AbilityProfile />} />
+          <Route path="/profile-analysis" element={<ProfileAnalysis />} />
           <Route path="/school-recommendation" element={<SchoolRecommendationNew />} />
           <Route path="/major-recommendation" element={<MajorRecommendation />} />
           <Route path="/school-compare" element={<SchoolCompare />} />
